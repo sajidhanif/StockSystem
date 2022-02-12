@@ -16,5 +16,33 @@ namespace StockSystem
         {
             InitializeComponent();
         }
+
+        //link subform to mainform
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+            activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelMain.Controls.Add(childForm);
+            panelMain.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+
+
+
+
+
+
+
+        }
+
+        private void tblUser_Click(object sender, EventArgs e)
+        {
+            openChildForm(new UserForm());
+        }
     }
 }

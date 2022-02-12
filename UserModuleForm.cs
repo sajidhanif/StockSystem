@@ -63,5 +63,29 @@ namespace StockSystem
 
         }
 
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageBox.Show("Update User?", "Updating Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    cm = new SqlCommand("UPDATE tblUser SET fullname=@fullname, password=@password, email=@email WHERE username LIKE '"+txtUserName.Text +"' ", con);
+                    cm.Parameters.AddWithValue("@fullname", txtFullName.Text);
+                    cm.Parameters.AddWithValue("@password", txtPassword.Text);
+                    cm.Parameters.AddWithValue("@email", txtEmail.Text);
+                    con.Open();
+                    cm.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("User Updated");
+                    this.Dispose();
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
