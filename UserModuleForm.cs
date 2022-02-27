@@ -52,6 +52,8 @@ namespace StockSystem
         private void btnClear_Click(object sender, EventArgs e)
         {
             Clear();
+            btnSave.Enabled = true;
+            btnUpdate.Enabled = false;
         }
 
         public void Clear()

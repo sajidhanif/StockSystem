@@ -1,6 +1,6 @@
 ﻿namespace StockSystem
 {
-    partial class UserForm
+    partial class CustomerForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,46 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserForm));
-            this.dgvUser = new System.Windows.Forms.DataGridView();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerForm));
+            this.dgvCustomer = new System.Windows.Forms.DataGridView();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAdd = new StockSystem.CustomerButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvUser
+            // dgvCustomer
             // 
-            this.dgvUser.AllowUserToAddRows = false;
-            this.dgvUser.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dgvUser.ColumnHeadersHeight = 30;
-            this.dgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvCustomer.AllowUserToAddRows = false;
+            this.dgvCustomer.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgvCustomer.ColumnHeadersHeight = 30;
+            this.dgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column5,
             this.Column1,
             this.Column2,
-            this.Column3,
             this.Column4,
             this.Edit,
             this.Delete});
-            this.dgvUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvUser.EnableHeadersVisualStyles = false;
-            this.dgvUser.Location = new System.Drawing.Point(0, 0);
-            this.dgvUser.Name = "dgvUser";
-            this.dgvUser.RowHeadersWidth = 92;
-            this.dgvUser.RowTemplate.Height = 37;
-            this.dgvUser.Size = new System.Drawing.Size(1677, 1066);
-            this.dgvUser.TabIndex = 0;
-            this.dgvUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUser_CellContentClick);
+            this.dgvCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvCustomer.EnableHeadersVisualStyles = false;
+            this.dgvCustomer.Location = new System.Drawing.Point(0, 0);
+            this.dgvCustomer.Name = "dgvCustomer";
+            this.dgvCustomer.RowHeadersWidth = 92;
+            this.dgvCustomer.RowTemplate.Height = 37;
+            this.dgvCustomer.Size = new System.Drawing.Size(1761, 807);
+            this.dgvCustomer.TabIndex = 3;
+            this.dgvCustomer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCustomer_CellContentClick);
             // 
             // Column5
             // 
@@ -80,25 +78,17 @@
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column1.HeaderText = "User Name";
+            this.Column1.HeaderText = "Customer ID";
             this.Column1.MinimumWidth = 11;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 184;
+            this.Column1.Width = 195;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.HeaderText = "Full Name";
+            this.Column2.HeaderText = "Name";
             this.Column2.MinimumWidth = 11;
             this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column3.HeaderText = "Password";
-            this.Column3.MinimumWidth = 11;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 169;
             // 
             // Column4
             // 
@@ -131,21 +121,19 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(50, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 29);
+            this.label1.Size = new System.Drawing.Size(263, 29);
             this.label1.TabIndex = 1;
-            this.label1.Text = "User Management";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Text = "Customer Management";
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 932);
+            this.panel1.Location = new System.Drawing.Point(0, 807);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1677, 134);
-            this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.Size = new System.Drawing.Size(1761, 134);
+            this.panel1.TabIndex = 4;
             // 
             // btnAdd
             // 
@@ -160,16 +148,16 @@
             this.btnAdd.TabStop = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // UserForm
+            // CustomerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1677, 1066);
+            this.ClientSize = new System.Drawing.Size(1761, 941);
+            this.Controls.Add(this.dgvCustomer);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dgvUser);
-            this.Name = "UserForm";
-            this.Text = "UserForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
+            this.Name = "CustomerForm";
+            this.Text = "CustomerForm";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).EndInit();
@@ -179,16 +167,15 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvUser;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewImageColumn Edit;
-        private System.Windows.Forms.DataGridViewImageColumn Delete;
+        private System.Windows.Forms.DataGridView dgvCustomer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private CustomerButton btnAdd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewImageColumn Edit;
+        private System.Windows.Forms.DataGridViewImageColumn Delete;
     }
 }

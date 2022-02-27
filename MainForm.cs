@@ -44,5 +44,25 @@ namespace StockSystem
         {
             openChildForm(new UserForm());
         }
+
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            openChildForm(new CustomerForm());
+        }
+
+        private void btnCatagory_Click(object sender, EventArgs e)
+        {
+            openChildForm(new CategoryForm());
+        }
+
+        private void btnProduct_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ProductForm());
+        }
+
+        private void tblOrder_Click(object sender, EventArgs e)
+        {
+            openChildForm(new OrderForm());
+        }
     }
 }

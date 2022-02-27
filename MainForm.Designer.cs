@@ -36,13 +36,13 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnCatagory = new StockSystem.CustomerButton();
             this.tblUser = new StockSystem.CustomerButton();
+            this.label4 = new System.Windows.Forms.Label();
             this.tblOrder = new StockSystem.CustomerButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnCustomer = new StockSystem.CustomerButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnProduct = new StockSystem.CustomerButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -60,9 +60,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2119, 112);
+            this.panel1.Size = new System.Drawing.Size(2282, 112);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -83,18 +83,18 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 112);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(2119, 1470);
+            this.panel2.Size = new System.Drawing.Size(2282, 1470);
             this.panel2.TabIndex = 1;
             // 
             // panelMain
             // 
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(0, 174);
-            this.panelMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(2);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(2119, 1296);
+            this.panelMain.Size = new System.Drawing.Size(2282, 1296);
             this.panelMain.TabIndex = 1;
             // 
             // panel3
@@ -112,135 +112,139 @@
             this.panel3.Controls.Add(this.btnProduct);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(2119, 174);
+            this.panel3.Size = new System.Drawing.Size(2282, 174);
             this.panel3.TabIndex = 0;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(966, 143);
+            this.label6.Location = new System.Drawing.Point(1040, 143);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(166, 29);
+            this.label6.Size = new System.Drawing.Size(186, 29);
             this.label6.TabIndex = 5;
             this.label6.Text = "CATERGORIES";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(1378, 143);
+            this.label5.Location = new System.Drawing.Point(1484, 143);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 29);
+            this.label5.Size = new System.Drawing.Size(95, 29);
             this.label5.TabIndex = 7;
             this.label5.Text = "USERS";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(1775, 143);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 29);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "ORDERS";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(648, 143);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 29);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "CLIENTS";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(271, 143);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 29);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "ITEMS";
             // 
             // btnCatagory
             // 
             this.btnCatagory.Image = ((System.Drawing.Image)(resources.GetObject("btnCatagory.Image")));
             this.btnCatagory.ImageHover = ((System.Drawing.Image)(resources.GetObject("btnCatagory.ImageHover")));
             this.btnCatagory.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnCatagory.ImageNormal")));
-            this.btnCatagory.Location = new System.Drawing.Point(960, 29);
+            this.btnCatagory.Location = new System.Drawing.Point(1034, 29);
             this.btnCatagory.Margin = new System.Windows.Forms.Padding(2);
             this.btnCatagory.Name = "btnCatagory";
-            this.btnCatagory.Size = new System.Drawing.Size(171, 98);
+            this.btnCatagory.Size = new System.Drawing.Size(184, 98);
             this.btnCatagory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnCatagory.TabIndex = 4;
             this.btnCatagory.TabStop = false;
+            this.btnCatagory.Click += new System.EventHandler(this.btnCatagory_Click);
             // 
             // tblUser
             // 
             this.tblUser.Image = ((System.Drawing.Image)(resources.GetObject("tblUser.Image")));
             this.tblUser.ImageHover = ((System.Drawing.Image)(resources.GetObject("tblUser.ImageHover")));
             this.tblUser.ImageNormal = ((System.Drawing.Image)(resources.GetObject("tblUser.ImageNormal")));
-            this.tblUser.Location = new System.Drawing.Point(1332, 29);
+            this.tblUser.Location = new System.Drawing.Point(1434, 29);
             this.tblUser.Margin = new System.Windows.Forms.Padding(2);
             this.tblUser.Name = "tblUser";
-            this.tblUser.Size = new System.Drawing.Size(171, 98);
+            this.tblUser.Size = new System.Drawing.Size(184, 98);
             this.tblUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.tblUser.TabIndex = 6;
             this.tblUser.TabStop = false;
             this.tblUser.Click += new System.EventHandler(this.tblUser_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(1912, 143);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(115, 29);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "ORDERS";
             // 
             // tblOrder
             // 
             this.tblOrder.Image = ((System.Drawing.Image)(resources.GetObject("tblOrder.Image")));
             this.tblOrder.ImageHover = ((System.Drawing.Image)(resources.GetObject("tblOrder.ImageHover")));
             this.tblOrder.ImageNormal = ((System.Drawing.Image)(resources.GetObject("tblOrder.ImageNormal")));
-            this.tblOrder.Location = new System.Drawing.Point(1729, 29);
+            this.tblOrder.Location = new System.Drawing.Point(1862, 29);
             this.tblOrder.Margin = new System.Windows.Forms.Padding(2);
             this.tblOrder.Name = "tblOrder";
-            this.tblOrder.Size = new System.Drawing.Size(171, 98);
+            this.tblOrder.Size = new System.Drawing.Size(184, 98);
             this.tblOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.tblOrder.TabIndex = 4;
             this.tblOrder.TabStop = false;
+            this.tblOrder.Click += new System.EventHandler(this.tblOrder_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(698, 143);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(115, 29);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "CLIENTS";
             // 
             // btnCustomer
             // 
             this.btnCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomer.Image")));
             this.btnCustomer.ImageHover = ((System.Drawing.Image)(resources.GetObject("btnCustomer.ImageHover")));
             this.btnCustomer.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnCustomer.ImageNormal")));
-            this.btnCustomer.Location = new System.Drawing.Point(602, 29);
+            this.btnCustomer.Location = new System.Drawing.Point(648, 29);
             this.btnCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.btnCustomer.Name = "btnCustomer";
-            this.btnCustomer.Size = new System.Drawing.Size(171, 98);
+            this.btnCustomer.Size = new System.Drawing.Size(184, 98);
             this.btnCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnCustomer.TabIndex = 2;
             this.btnCustomer.TabStop = false;
+            this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(292, 143);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(87, 29);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "ITEMS";
             // 
             // btnProduct
             // 
             this.btnProduct.Image = ((System.Drawing.Image)(resources.GetObject("btnProduct.Image")));
             this.btnProduct.ImageHover = ((System.Drawing.Image)(resources.GetObject("btnProduct.ImageHover")));
             this.btnProduct.ImageNormal = ((System.Drawing.Image)(resources.GetObject("btnProduct.ImageNormal")));
-            this.btnProduct.Location = new System.Drawing.Point(225, 29);
+            this.btnProduct.Location = new System.Drawing.Point(242, 29);
             this.btnProduct.Margin = new System.Windows.Forms.Padding(2);
             this.btnProduct.Name = "btnProduct";
-            this.btnProduct.Size = new System.Drawing.Size(171, 98);
+            this.btnProduct.Size = new System.Drawing.Size(184, 98);
             this.btnProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnProduct.TabIndex = 0;
             this.btnProduct.TabStop = false;
+            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2119, 1582);
+            this.ClientSize = new System.Drawing.Size(2282, 1582);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";

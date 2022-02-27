@@ -71,7 +71,7 @@ namespace StockSystem
                 if (MessageBox.Show("Delete User?","Delete User",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
                 {
                     con.Open();
-                    cm = new SqlCommand("DELETE FROM tblUser WHERE email like '" + dgvUser.Rows[e.RowIndex].Cells[1].Value.ToString() + "'", con);
+                    cm = new SqlCommand("DELETE FROM tblUser WHERE username like '" + dgvUser.Rows[e.RowIndex].Cells[1].Value.ToString() + "'", con);
                     cm.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("Deleted");
@@ -81,6 +81,16 @@ namespace StockSystem
             }
             LoadUser();
 
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }
